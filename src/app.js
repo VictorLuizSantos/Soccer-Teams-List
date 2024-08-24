@@ -1,17 +1,9 @@
-const express = require('express');
-const app = express();
+import express from 'express'
 
-const port = 3001
-const selecoes = {
-
-}
+const app = express()
 
 app.get('/', (req, res) => {
-    res.send('Pegando dados das selecoes.')
+    res.send('Pegando dados.')
 })
 
-app. listen(port, () => {
-    console.log(`Servidor rodando na porta ${port}`);
-})
-
-app.listen(port);
+export default app
