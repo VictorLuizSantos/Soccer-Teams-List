@@ -8,7 +8,9 @@ const selecoes = [
     {id: 2, selecao: "Brasil", grupo: "B"},
     {id: 3, selecao: "Chile", grupo: "C"},
     {id: 4, selecao: "Dinamarca", grupo: "D"},
-    {id: 5, selecao: "Equador", grupo: "E"}
+    {id: 5, selecao: "Equador", grupo: "E"},
+    {id: 5, selecao: "Franca", grupo: "F"},
+
 ]
 
 function buscarSelecaoPorId(id) {
