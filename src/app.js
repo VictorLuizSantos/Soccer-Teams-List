@@ -10,7 +10,6 @@ const selecoes = [
     {id: 4, selecao: "Dinamarca", grupo: "D"},
     {id: 5, selecao: "Equador", grupo: "E"},
     {id: 5, selecao: "Franca", grupo: "F"},
-
 ]
 
 function buscarSelecaoPorId(id) {
@@ -32,7 +31,8 @@ app.post('/selecoes', (req, res) =>{
 
 app.put('/selecoes/:id',(req, res) => {
     const index = req.params.id - 1
-     selecoes[index] = req.body
+     selecoes[index].selecao = req.body.selecao
+     selecoes[index].grupo = req.body.grupo
      res.send(`Selecao com id ${req.params.id} alterada com sucesso`)
 })
 
