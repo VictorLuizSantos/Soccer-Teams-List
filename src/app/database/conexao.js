@@ -7,3 +7,7 @@ const dataBase = mysql.createConnection({
     password: "root",
     database: "BD_COPA"
 })
+
+dataBase.connect()
+
+export default dataBase
